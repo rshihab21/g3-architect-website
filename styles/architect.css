@@ -240,6 +240,44 @@ section {
     color: rgba(114, 114, 114, 1)
 }
 
+/* style sponsor area */
+.sponsor-content {
+    width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.sponsor-content p {
+    font-size: 1rem;
+    list-style: 26px
+}
+.sponsor-grid-container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* style footer area  */
+
+.footer {
+     background-color: rgba(255, 144, 14, 0.1);
+    ;
+    padding: 39px 0;
+    width: 1440px;
+    margin: 0 auto;
+}
+.footer p {
+    text-align: center;
+    color: gba(66, 66, 66, 1);
+    font-size: 1.2rem;
+}
+
 @media screen and (max-width:576px) {
     .navbar {
         flex-direction: column;
