@@ -27,7 +27,7 @@
     color: rgba(114, 114, 114, 1);
 }
 
-.navbar, .banner {
+.navbar, .banner, main {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -40,6 +40,9 @@
     padding: 20px 25px;
     font-size: 1.1rem;
    
+}
+section {
+    margin: 85px 0px;
 }
 
 /* header style  */
@@ -93,9 +96,56 @@
     width: 100%;
 }
 
+/* team related css styles */
+.team-section {
+    align-items: center;
+    gap: 16px;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+
+.team-tentent {
+    margin-left: 30px;
+    
+}
+.team-tentent h2 {
+    font-size: 2.5rem;
+    width: 348px;
+}
+.feature {
+    color: rgba(255, 144, 14, 1);
+}
+.team-tentent p {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 537px;
+    margin-bottom: 25px;
+}
+
+
 
 @media screen and (max-width:576px) {
     .navbar{
         flex-direction: column;
+    }
+    .team-section {
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-tentent {
+        margin-left:0px;
+    }
+    .team-tentent h2 {
+       width: 100%;
+    }
+    .team-tentent p {
+        width: 100%;
     }
 }
